@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Movie({ coverImg, titleLong, summary, genres }) {
   return (
     <div>
@@ -13,6 +15,13 @@ function Movie({ coverImg, titleLong, summary, genres }) {
       ) : null}
     </div>
   );
+}
+
+Movie.propTypes = {
+    coverImg: PropTypes.string.isRequired,
+    titleLong: PropTypes.string.isRequired,
+    summary: PropTypes.string.isRequired,
+    genres: PropTypes.arrayOf(PropTypes.string),
 }
 
 export default Movie;

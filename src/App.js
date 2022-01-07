@@ -25,7 +25,7 @@ function App() {
             <Movie
               key={movie.id}
               coverImg={movie.medium_cover_image}
-              titleLong={movie.titleLong}
+              titleLong={movie.title_long}
               summary={movie.summary}
               genres={movie.genres}
             />
